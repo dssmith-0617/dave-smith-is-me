@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -30,4 +30,27 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+} */
+
+body {
+  background: radial-gradient(circle at top, #2A3770 0%, #10152C 50%);
+  color: #dfdfdf;
+}
+
+#content-wrapper {
+  width:100%;
+  max-width:1500px;
+  margin:0 auto;
+  margin-top:200px;
+}
+
+#hero-images:hover {
+  background:none;
+}
+/* #hero-images:hover img {
+  bottom:0;
+  right:0;
+} */
+#hero-images:hover img:first-of-type {
+  opacity:0;
 }
