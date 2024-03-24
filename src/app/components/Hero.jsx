@@ -9,7 +9,6 @@ import { Fira_Code } from 'next/font/google';
 const firaCode = Fira_Code({subsets: ["latin"]});
 
 function Hero() {
-    
 
     const languages = [
         {
@@ -99,16 +98,36 @@ function Hero() {
     ]
 
   return (
-    <div id="content-wrapper" className='mt-96'>
+    <div className="content-wrapper">
         <div className="flex lg:flex-row md:flex-col sm:flex-col">
-            <div className="basis-1/2 p-4">
-                <div id="hero-images" className='pr-8 relative bg-gradient-to-r from-cyan-500 to-blue-500 w-full rounded-2xl max-h-[896px]'>
-                    <Image src="/fisherman_drawing.png" width="700" height="896" className="rounded-2xl absolute z-20 transition-all"/>
-                    <Image src="/fisherman_picture.jpg" width="700" height="896" className="rounded-2xl absolute z-10 transition-all"/>
+            <div className="basis-1/2 p-10">
+                <div id="About" className='text-3xl font-semibold text-gray-300 border-b-4 border-teal-600 max-w-max pb-2 mb-8'>
+                    About Me
+                </div>
+                <div className='mb-10'>
+                    <p className='mb-6'>
+                    As a web developer, I work extensively with Javascript, PHP, CSS3, jQuery, and React.
+                    </p>
+                    <p className='mb-6'>
+                    As a designer, I use the Adobe Suite every day, with a focus on Photoshop, Illustrator, XD, and After Effects.
+                    </p>
+                    <p className='mb-6'>
+                    I am very passionate about working on all phases of website development, from the first day with a blank canvas, to the last day of a project when the code is pushed to the live website.
+                    </p> 
+                </div>
+                <div id="hero-images" className='relative bg-gradient-to-r from-cyan-500 to-blue-500 w-full rounded-2xl max-h-[896px] max-w-[700px] text-center'>
+                    <Image src="/fisherman_drawing.png" width="700" height="896" className="rounded-2xl relative z-20 transition-all duration-300"/>
+                    <Image src="/fisherman_picture.jpg" width="700" height="896" className="bottom-photo rounded-2xl absolute z-10 transition-all duration-300"/>
+                    <div id="more-about-me" className='absolute top-1/4 z-30 w-3/4 left-[12.5%] opacity-0 transition-all duration-300 text-white bg-slate-800/35 p-6 rounded-xl '>
+                        I have been working in web development for over 8 years. I am currently the in-house web developer, UI/UX designer, and marketing lead for an industrial motion control company in Rochester, NY. I enjoy taking on new challenges and working on projects that take me out of my comfort zone.
+                    </div>
+                    <div id="more-about-me-btn" className='absolute z-30 bottom-10 text-2xl text-white px-6 py-4 mx-auto rounded-md left-1/2 ml-[-120px] cursor-pointer bg-slate-800/35 transition-all duration-300'>
+                        More About Me
+                    </div>
                 </div>   
             </div>
 
-            <div className="basis-1/2 p-4">
+            <div className="basis-1/2 p-10">
                 <div className="flex-col">
                     <div className="text-gray-300 text-lg border-solid border-b-1 border-gray-600 pb-2 mb-4">
                         Languages

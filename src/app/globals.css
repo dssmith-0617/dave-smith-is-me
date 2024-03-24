@@ -2,55 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */
-
 body {
   background: radial-gradient(circle at top, #2A3770 0%, #10152C 50%);
   color: #dfdfdf;
 }
 
-#content-wrapper {
+.content-wrapper {
   width:100%;
-  max-width:1500px;
+  max-width:1600px;
   margin:0 auto;
-  margin-top:200px;
+  margin-top:120px;
 }
-
-#hero-images:hover {
+.bottom-photo {
+  opacity:0;
+}
+/* #hero-images:hover {
   background:none;
+} */
+#hero-images img {
+  bottom:10px;
+  right:10px;
 }
-/* #hero-images:hover img {
+#hero-images:hover img {
   bottom:0;
   right:0;
-} */
+}
 #hero-images:hover img:first-of-type {
   opacity:0;
+}
+#hero-images:hover .bottom-photo {
+  opacity:1;
+}
+#hero-images:hover #more-about-me {
+  top:40%;
+  opacity:1;
 }

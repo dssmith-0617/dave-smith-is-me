@@ -49,7 +49,7 @@ function Nav() {
             key={id}
             className="nav-links px-8 cursor-pointer uppercase font-medium text-gray-200 hover:scale-105 hover:text-white duration-200 link-underline"
           >
-            <Link href={link}>{link}</Link>
+            <Link href={`#${link}`}>{link}</Link>
           </li>
         ))}
       </ul>
