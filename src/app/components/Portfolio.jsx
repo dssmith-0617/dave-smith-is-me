@@ -44,7 +44,7 @@ function Portfolio() {
             icon1: <DiJqueryLogo size={30} className="text-cyan-950" />,
             icon2: <FaBootstrap size={30} className='text-cyan-950' />,
             icon3: <FaCss3 size={30} className='text-cyan-950' />,
-            icon4: <FaWordpress size={30} className='text-cyan-950' />,
+            icon4: <SiAdobexd size={30} className='text-cyan-950' />,
             icon5: <SiAdobeillustrator size={30} className='text-cyan-950' />,
         },
         {
@@ -53,10 +53,11 @@ function Portfolio() {
             url: 'https://www.reveredcampaigns.com/',
             urlName: 'reveredcampaigns.com/',
             image: '',
-            explainer: "This page guides users through the process of purchasing required and optional accessories to complete a servo motor system. I used Bootstrap and jQuery to create a guide that is easy to use and provides a substantial amount of information to the user without overwhelming them.",
+            explainer: "The Revered Campaigns website was built by a fellow developer and I as a marketing website for web development projects that cater to doctors and other medical professionals. We are currently at work on a custom CMS to simplify the process for busy doctors. The CMS will incorporate the use of AI to assist users with writing website copy.",
             icon1: <FaReact size={30} className="text-cyan-950" />,
             icon2: <SiNextdotjs size={30} className='text-cyan-950' />,
             icon3: <SiTailwindcss size={30} className='text-cyan-950' />,
+            icon4: <SiAdobexd size={30} className='text-cyan-950' />,
             icon5: <SiAdobeillustrator size={30} className='text-cyan-950' />,
         },
 
@@ -65,13 +66,31 @@ function Portfolio() {
   return (
     <div id="Portfolio" className="w-full max-w-[1600px] mx-auto mt-[50px]">
         <div className="flex lg:flex-row md:flex-col sm:flex-col">
-            <div className="basis-1/2 p-10">
-                <div id="About" className='text-3xl font-semibold text-gray-300 border-b-4 border-teal-600 max-w-max pb-2 mb-8'>
+            <div className="basis-full p-10">
+                <div className='text-3xl font-semibold text-gray-300 border-b-4 border-teal-600 max-w-max pb-2 mb-8'>
                     Portfolio
                 </div>
-            </div>
-            <div className="basis-1/2 p-10">
+                <div className="relative w-1/2 max-w-[750px]">
+                    <div className='relative bg-gradient-to-l from-cyan-500 to-blue-500 rounded-2xl'>
+                        <Image src="/build-hudson.jpg" width="750" height="622" className="rounded-2xl relative z-20 transition-all duration-300 bottom-[10px] right-[10px] hover:bottom-0 hover:right-0" />
+                    </div>
+                    <div>
+                        <div className='bg-gradient-to-b from-white to-slate-900 rounded-2xl'>
+                            <div className='bg-blue-950'>
+                                <div className="noiselayer">
+                                     <div className={firaCode.className}>
+                                        <span className='text-emerald-400'>01</span>
+                                    </div> 
+                                    <div className="text-lg">Build-your-own motor module</div>
+                                </div>
+                                 
+                            </div>
+                            
 
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
