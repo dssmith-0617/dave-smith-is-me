@@ -13,9 +13,7 @@ body {
   margin:0 auto;
   margin-top:120px;
 }
-.bottom-photo {
-  opacity:0;
-}
+
 /* #hero-images:hover {
   background:none;
 } */
@@ -31,13 +29,20 @@ body {
   transition:.3s ease;
 }
 .bottom-photo {
-  transition:.5s ease;
+  opacity:1;
+  padding-right:10px;
+  padding-bottom:10px;
+  transition:.3s ease;
+}
+#hero-images img:first-of-type {
+  opacity:.9;
 }
 #hero-images:hover img:first-of-type {
   opacity:0;
 }
 #hero-images:hover .bottom-photo {
   opacity:1;
+  padding:0;
 }
 #hero-images:hover #more-about-me, .portfolio-image:hover .more-about-me {
   top:10%;

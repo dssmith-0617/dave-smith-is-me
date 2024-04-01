@@ -54,7 +54,7 @@ function Portfolio() {
         {
             id: '04',
             title: 'K & D Creations',
-            url: 'https://www.reveredcampaigns.com/',
+            url: 'https://www.kanddcreations.com/',
             urlName: 'kanddcreations.com/',
             image: '/kandd-creations.png',
             explainer: "The Revered Campaigns website was built by a fellow developer and I as a marketing website for web development projects that cater to doctors and other medical professionals. We are currently at work on a custom CMS to simplify the process for busy doctors. The CMS will incorporate the use of AI to assist users with writing website copy.",
@@ -79,10 +79,10 @@ function Portfolio() {
                     <div className='basis-1/2 w-full p-8'>
                         <div className='portfolio-image relative bg-gradient-to-l from-cyan-500 to-blue-500 rounded-2xl max-w-max max-h-max w-full pr-[10px] pb-[10px] hover:p-0 transition-all'>
                             <Image src={image} width="750" height="622" className="rounded-2xl relative z-20 transition-all duration-300 w-full max-w-max opacity-70 hover:opacity-100" />
-                            <div className="more-about-me absolute top-1/4 z-30 w-3/4 left-[12.5%] opacity-0 transition-all duration-300 text-white bg-slate-800/45 p-6 rounded-xl ">
+                            <div className="more-about-me absolute top-1/4 z-30 w-3/4 left-[12.5%] opacity-0 transition-all text-sm duration-300 text-white bg-slate-800/65 p-6 rounded-xl ">
                                 {challenges}
                             </div>
-                            <Link href={url} className='absolute z-30 bottom-10 text-xl text-white px-6 py-2 mx-auto rounded-lg left-1/2 ml-[-70px] cursor-pointer bg-teal-600 transition-all duration-300 flex'>
+                            <Link href={url} target="_blank" className='absolute z-30 bottom-10 text-xl text-white px-6 py-2 mx-auto rounded-lg left-1/2 ml-[-85px] cursor-pointer bg-slate-800/65 transition-all duration-300 flex hover:bg-slate-800'>
                                 See More <IoIosArrowRoundForward className='ml-2 align-middle relative top-1'/>
                             </Link>
                         </div>    
