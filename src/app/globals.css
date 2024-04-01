@@ -39,8 +39,8 @@ body {
 #hero-images:hover .bottom-photo {
   opacity:1;
 }
-#hero-images:hover #more-about-me {
-  top:20%;
+#hero-images:hover #more-about-me, .portfolio-image:hover .more-about-me {
+  top:10%;
   opacity:1;
 }
 .noiselayer {

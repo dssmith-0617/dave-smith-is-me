@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { FaReact, FaSquareJs, FaCss3, FaPhp, FaBootstrap, FaWordpress } from 'react-icons/fa6';
 import { DiJqueryLogo } from 'react-icons/di';
 import { SiNextdotjs, SiTailwindcss, SiWoo, SiStoryblok, SiAdobephotoshop, SiAdobeillustrator, SiAdobeaftereffects, SiAdobexd } from  'react-icons/si';
+import { IoIosArrowRoundForward } from "react-icons/io";
 import { Fira_Code } from 'next/font/google';
 
 
@@ -17,11 +18,12 @@ function Portfolio() {
             urlName: 'teknic.com',
             image: '/build-hudson.jpg',
             explainer: "This page allows users to build a custom servo motor by choosing from a set of potential options and/or upgrades to optimize these motors into their machine design. Completing the customizer brings the user to the page of the part number that was created, where the user can purchase that part number through the website's e-commerce.",
-            icon1: <FaSquareJs size={50} className="text-slate-950 basis-1/5" />,
-            icon2: <FaPhp size={50} className='text-slate-950 basis-1/5' />,
-            icon3: <FaCss3 size={50} className='text-slate-950 basis-1/5' />,
-            icon4: <FaWordpress size={50} className='text-slate-950 basis-1/5' />,
-            icon5: <SiAdobephotoshop size={50} className='text-slate-950 basis-1/5' />,
+            challenges: "The prompt for this project was simple: build a configurator that brings the user to the selected model after selecting from 3-4 inputs (e.g., connector type, shaft size, and encoder density). The primary challenges here were two-fold: 1) There are several thousand possible part numbers that could be created, and 2) Every rule for these motors has at least one exception (e.g., building a motor with waterproof connectors and a motor shaft that is not waterproof would create a motor that is no longer waterproof).",
+            icon1: <FaSquareJs size={40} className="text-[#0d9488] basis-1/5" />,
+            icon2: <FaPhp size={40} className='text-[#0d9488] basis-1/5' />,
+            icon3: <FaCss3 size={40} className='text-[#0d9488] basis-1/5' />,
+            icon4: <FaWordpress size={40} className='text-[#0d9488] basis-1/5' />,
+            icon5: <SiAdobephotoshop size={40} className='text-[#0d9488] basis-1/5' />,
         },
         {
             id: '02',
@@ -30,11 +32,11 @@ function Portfolio() {
             urlName: 'arnotortho.com',
             image: '/arnot-skeleton.jpg',
             explainer: "The Arnot Orthopedic group was intent on creating a website that is easy to navigate for existing (and potential) patients. The group also wanted the ability to add patient resources and useful information on their own without learning how to code. This Next.js application was built with Storyblok CMS, which allows the doctors to add content by filling out a few fields and clicking 'Publish.'",
-            icon1: <FaReact size={50} className="text-slate-950 basis-1/5" />,
-            icon2: <SiNextdotjs size={50} className='text-slate-950 basis-1/5' />,
-            icon3: <SiTailwindcss size={50} className='text-slate-950 basis-1/5' />,
-            icon4: <SiStoryblok size={50} className='text-slate-950 basis-1/5' />,
-            icon5: <SiAdobephotoshop size={50} className='text-slate-950 basis-1/5' />,
+            icon1: <FaReact size={40} className="text-[#0d9488] basis-1/5" />,
+            icon2: <SiNextdotjs size={40} className='text-[#0d9488] basis-1/5' />,
+            icon3: <SiTailwindcss size={40} className='text-[#0d9488] basis-1/5' />,
+            icon4: <SiStoryblok size={40} className='text-[#0d9488] basis-1/5' />,
+            icon5: <SiAdobephotoshop size={40} className='text-[#0d9488] basis-1/5' />,
         },
         {
             id: '03',
@@ -43,24 +45,24 @@ function Portfolio() {
             urlName: 'teknic.com',
             image: '/accessories-guide-opera.png',
             explainer: "This page guides users through the process of purchasing required and optional accessories to complete a servo motor system. I used Bootstrap and jQuery to create a guide that is easy to use and provides a substantial amount of information to the user without overwhelming them.",
-            icon1: <DiJqueryLogo size={50} className="text-slate-950 basis-1/5" />,
-            icon2: <FaBootstrap size={50} className='text-slate-950 basis-1/5' />,
-            icon3: <FaCss3 size={50} className='text-slate-950 basis-1/5' />,
-            icon4: <SiAdobexd size={50} className='text-slate-950 basis-1/5' />,
-            icon5: <SiAdobeillustrator size={50} className='text-slate-950 basis-1/5' />,
+            icon1: <DiJqueryLogo size={40} className="text-[#0d9488] basis-1/5" />,
+            icon2: <FaBootstrap size={40} className='text-[#0d9488] basis-1/5' />,
+            icon3: <FaCss3 size={40} className='text-[#0d9488] basis-1/5' />,
+            icon4: <SiAdobexd size={40} className='text-[#0d9488] basis-1/5' />,
+            icon5: <SiAdobeillustrator size={40} className='text-[#0d9488] basis-1/5' />,
         },
         {
             id: '04',
-            title: 'Revered Campaigns',
+            title: 'K & D Creations',
             url: 'https://www.reveredcampaigns.com/',
-            urlName: 'reveredcampaigns.com/',
-            image: '/revere.jpg',
+            urlName: 'kanddcreations.com/',
+            image: '/kandd-creations.png',
             explainer: "The Revered Campaigns website was built by a fellow developer and I as a marketing website for web development projects that cater to doctors and other medical professionals. We are currently at work on a custom CMS to simplify the process for busy doctors. The CMS will incorporate the use of AI to assist users with writing website copy.",
-            icon1: <FaReact size={50} className="text-slate-950 basis-1/5" />,
-            icon2: <SiNextdotjs size={50} className='text-slate-950 basis-1/5' />,
-            icon3: <SiTailwindcss size={50} className='text-slate-950 basis-1/5' />,
-            icon4: <SiAdobexd size={50} className='text-slate-950 basis-1/5' />,
-            icon5: <SiAdobeillustrator size={50} className='text-slate-950 basis-1/5' />,
+            icon1: <FaWordpress size={40} className='text-[#0d9488] basis-1/5' />,
+            icon2: <FaPhp size={40} className='text-[#0d9488] basis-1/5' />,
+            icon3: <FaCss3 size={40} className='text-[#0d9488] basis-1/5' />,
+            icon4: <SiAdobexd size={40} className='text-[#0d9488] basis-1/5' />,
+            icon5: <SiAdobephotoshop size={40} className='text-[#0d9488] basis-1/5' />,
         },
 
     ];
@@ -72,16 +74,24 @@ function Portfolio() {
                 <div className='text-3xl font-semibold text-gray-300 border-b-4 border-teal-600 max-w-max pb-2 mb-16'>
                     Portfolio
                 </div>
-                {projects.map(({ id, title, url, urlName, image, explainer, icon1, icon2, icon3, icon4, icon5 }) => (
-                <div key={id} className="relative w-full mb-48 flex flex-row">
-                    <div className='relative bg-gradient-to-l from-cyan-500 to-blue-500 rounded-2xl max-w-max max-h-max basis-1/2 w-full pr-[10px] pb-[10px] hover:p-0 transition-all'>
-                        <Image src={image} width="750" height="622" className="rounded-2xl relative z-20 transition-all duration-300 w-full max-w-max" />
+                {projects.map(({ id, title, url, urlName, image, explainer, challenges, icon1, icon2, icon3, icon4, icon5 }) => (
+                <div key={id} className="relative w-full mb-48 flex flex-row basis-1">
+                    <div className='basis-1/2 w-full p-8'>
+                        <div className='portfolio-image relative bg-gradient-to-l from-cyan-500 to-blue-500 rounded-2xl max-w-max max-h-max w-full pr-[10px] pb-[10px] hover:p-0 transition-all'>
+                            <Image src={image} width="750" height="622" className="rounded-2xl relative z-20 transition-all duration-300 w-full max-w-max opacity-70 hover:opacity-100" />
+                            <div className="more-about-me absolute top-1/4 z-30 w-3/4 left-[12.5%] opacity-0 transition-all duration-300 text-white bg-slate-800/45 p-6 rounded-xl ">
+                                {challenges}
+                            </div>
+                            <Link href={url} className='absolute z-30 bottom-10 text-xl text-white px-6 py-2 mx-auto rounded-lg left-1/2 ml-[-70px] cursor-pointer bg-teal-600 transition-all duration-300 flex'>
+                                See More <IoIosArrowRoundForward className='ml-2 align-middle relative top-1'/>
+                            </Link>
+                        </div>    
                     </div>
-                    
-                    <div className='relative top-1/2 z-20 max-w-[650px] basis-1/2 w-full p-10'>
-                        <div className='bg-gradient-to-b from-slate-500 to-slate-900 rounded-2xl p-[1px] relative top-1/4 mx-auto'>
-                            <div className='bg-[#22294b] rounded-[16px] shadow-box'>
-                                <div className="noiselayer p-4">
+
+                    <div className='relative z-20 max-w-[650px] basis-1/2 w-full p-8'>
+                        <div className='rounded-2xl p-[1px] relative top-[12%] mx-auto'>
+                            <div className='rounded-[16px]'>
+                                <div className="p-4">
                                     
                                         <div className={firaCode.className}>
                                             <span className='text-emerald-400'>{id}</span>

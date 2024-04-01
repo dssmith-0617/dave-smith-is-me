@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Image from "next/image";
 
 function Nav() {
   const [nav, setNav] = useState(false);
@@ -37,10 +38,10 @@ function Nav() {
             href=""
             rel="noreferrer"
           >
-            Dave Smith
+            <Image src="/ds-logo.svg" height="50" width="50"/>
           </a>
         </h1>
-        <div id="header-sub" className="text-md text-teal-600 ml-2">Web Developer & Designer</div>
+        <div id="header-sub" className="text-md font-semibold text-teal-600 ml-2">Web Developer & Designer</div>
       </div>
 
       <ul className="hidden md:flex">

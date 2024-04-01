@@ -7,6 +7,7 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 export const metadata = {
   title: "Dave Smith",
   description: "Web Developer and Designer",
+  icons: '/ds-logo.png',
 };
 
 export default function RootLayout({ children }) {
