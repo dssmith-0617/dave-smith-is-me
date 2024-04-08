@@ -59,8 +59,8 @@ function Portfolio() {
             url: 'https://www.kanddcreations.com/',
             urlName: 'kanddcreations.com/',
             image: '/kandd-creations.png',
-            explainer: "The Revered Campaigns website was built by a fellow developer and I as a marketing website for web development projects that cater to doctors and other medical professionals. We are currently at work on a custom CMS to simplify the process for busy doctors. The CMS will incorporate the use of AI to assist users with writing website copy.",
-            challenges: "Enim ipsum adipisicing est pariatur dolore elit. Sit voluptate dolore irure dolore. Ut consectetur laborum do elit ullamco esse labore quis esse fugiat duis et laboris. Nisi cupidatat velit irure enim. Incididunt sint officia ea consequat labore. Aliqua incididunt magna occaecat irure aliqua aliquip exercitation dolore consequat tempor magna in anim cupidatat.",
+            explainer: "The K&D Creations website was in disrepair was I was hired to fix some major structural problems and also complete a major theme redesign. The client required this project to be done on a very short timeline to be ready for a major tradeshow, so I was able to complete the bulk of this project in just a few weeks. The website now has a cohesive theme that matches the client's portfolio images and shows off their expertise to potential clients.",
+            challenges: "This project required a backup restoration, copy writing, logo creation, and photo editing on top of substantial website design and coding.",
             icon1: <FaWordpress size={40} className='text-[#0d9488] basis-1/5' />,
             icon2: <FaPhp size={40} className='text-[#0d9488] basis-1/5' />,
             icon3: <FaCss3 size={40} className='text-[#0d9488] basis-1/5' />,
@@ -82,7 +82,7 @@ function Portfolio() {
                     <div className='basis-full w-full lg:basis-1/2 lg:p-8 mx-auto'>
                         <div className='portfolio-image relative bg-gradient-to-l from-cyan-500 to-blue-500 rounded-2xl max-w-max max-h-max w-full pr-[10px] pb-[10px] hover:p-0 transition-all'>
                             <Image src={image} width="750" height="622" className="rounded-2xl relative z-20 transition-all duration-300 w-full max-w-max opacity-90 hover:opacity-100" />
-                            <div className="more-about-me absolute top-1/4 z-30 w-3/4 left-[12.5%] opacity-0 transition-all text-sm duration-300 text-white bg-slate-800/65 p-6 rounded-xl ">
+                            <div className="more-about-me absolute top-0 z-30 w-3/4 left-[12.5%] opacity-0 transition-all text-sm duration-300 text-white bg-slate-800/65 p-6 rounded-xl hidden lg:block">
                                 {challenges}
                             </div>
                             <Link href={url} target="_blank" className='absolute z-30 bottom-10 text-xl text-white px-6 py-2 mx-auto rounded-lg left-1/2 ml-[-85px] cursor-pointer bg-slate-800/65 transition-all duration-300 flex hover:bg-slate-800'>
@@ -91,7 +91,7 @@ function Portfolio() {
                         </div>    
                     </div>
 
-                    <div className='relative z-20 max-w-[650px] basis-full w-full lg:basis-1/2 lg:p-8 mx-auto'>
+                    <div className='relative z-20 max-w-[650px] basis-full w-full lg:basis-1/2 p-2 lg:p-8 mx-auto'>
                         <div className='rounded-2xl p-[1px] relative top-[12%] mx-auto'>
                             <div className='rounded-[16px]'>
                                 <div className="p-4">

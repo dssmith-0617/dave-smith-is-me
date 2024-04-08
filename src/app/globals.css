@@ -45,7 +45,7 @@ body {
   padding:0;
 }
 #hero-images:hover #more-about-me, .portfolio-image:hover .more-about-me {
-  top:10%;
+  top:2%;
   opacity:1;
 }
 .noiselayer {
