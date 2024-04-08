@@ -73,13 +73,13 @@ function Portfolio() {
   return (
     <div id="Portfolio" className="w-full max-w-[1600px] mx-auto mt-[50px]">
         <div className="flex lg:flex-row md:flex-col sm:flex-col">
-            <div className="basis-full p-10">
+            <div className="basis-full p-4 lg:p-10">
                 <div className='text-3xl font-semibold text-gray-300 border-b-4 border-teal-600 max-w-max pb-2 mb-16'>
                     Portfolio
                 </div>
                 {projects.map(({ id, title, url, urlName, image, explainer, challenges, icon1, icon2, icon3, icon4, icon5 }) => (
                 <div key={id} className="relative w-full mb-48 basis-full flex flex-col lg:flex-row">
-                    <div className='basis-full w-full lg:basis-1/2 p-8'>
+                    <div className='basis-full w-full lg:basis-1/2 lg:p-8 mx-auto'>
                         <div className='portfolio-image relative bg-gradient-to-l from-cyan-500 to-blue-500 rounded-2xl max-w-max max-h-max w-full pr-[10px] pb-[10px] hover:p-0 transition-all'>
                             <Image src={image} width="750" height="622" className="rounded-2xl relative z-20 transition-all duration-300 w-full max-w-max opacity-90 hover:opacity-100" />
                             <div className="more-about-me absolute top-1/4 z-30 w-3/4 left-[12.5%] opacity-0 transition-all text-sm duration-300 text-white bg-slate-800/65 p-6 rounded-xl ">
@@ -91,7 +91,7 @@ function Portfolio() {
                         </div>    
                     </div>
 
-                    <div className='relative z-20 max-w-[650px] basis-full w-full lg:basis-1/2 p-8'>
+                    <div className='relative z-20 max-w-[650px] basis-full w-full lg:basis-1/2 lg:p-8 mx-auto'>
                         <div className='rounded-2xl p-[1px] relative top-[12%] mx-auto'>
                             <div className='rounded-[16px]'>
                                 <div className="p-4">
