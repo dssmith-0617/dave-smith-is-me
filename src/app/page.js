@@ -1,6 +1,7 @@
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import Portfolio from "./components/Portfolio";
+import Extras from "./components/Extras";
 
 export default function Home() {
   return (
@@ -10,8 +11,7 @@ export default function Home() {
         <div className="w-full"> */}
       <Hero />
       <Portfolio />
-        {/* </div>       
-      </div> */}
+      <Extras />
       
     </main>
   );

@@ -134,10 +134,10 @@ function Hero() {
                 <div id="hero-images" className='relative bg-gradient-to-l from-cyan-500 to-blue-500 w-full mx-auto rounded-2xl max-h-[896px] max-w-[700px] text-center pr-[10px] pb-[10px] hover:p-0'>
                     <Image src="/fisherman_drawing_2.png" width="700" height="896" className="rounded-2xl relative z-20 transition-all duration-300"/>
                     <Image src="/fisherman_picture.jpg" width="700" height="896" className="bottom-photo rounded-2xl absolute bottom-0 z-10 transition-all duration-300"/>
-                    <div id="more-about-me" className='absolute top-1/4 z-30 w-3/4 left-[12.5%] opacity-0 transition-all duration-300 text-white bg-slate-800/65 p-6 rounded-xl hidden sm:block'>
+                    <div id="more-about-me" className='absolute top-1/4 z-30 w-3/4 left-[12.5%] opacity-0 transition-all duration-300 text-white bg-slate-800/65 p-6 rounded-xl hidden backdrop-blur-sm sm:block'>
                         I have been working in web development for over 8 years. I am currently the in-house web developer, UI/UX designer, and marketing lead for an industrial motion control company in Rochester, NY. I enjoy taking on new challenges and working on projects that take me out of my comfort zone.
                     </div>
-                    <div id="more-about-me-btn" className='absolute z-30 bottom-10 text-2xl text-white px-6 py-4 mx-auto rounded-md left-1/2 ml-[-120px] cursor-default bg-slate-800/65 transition-all duration-300 hidden md:block'>
+                    <div id="more-about-me-btn" className='absolute z-30 bottom-10 text-2xl text-white px-6 py-4 mx-auto rounded-md left-1/2 ml-[-120px] cursor-default bg-slate-800/65 transition-all duration-300 backdrop-blur-sm hidden md:block'>
                         More About Me
                     </div>
                 </div>   
@@ -152,7 +152,7 @@ function Hero() {
                     <ul className={firaCode.className}>
                         {languages.map(({ id, logo, txt, hoverColor }) => (
                             <li key={id} className="flex text-gray-300 mb-4 mt-4 group">
-                                <div className="bg-gray-800 p-2 border-1 border-solid border-gray-700 rounded-md mr-8 transition-all group-hover:bg-slate-900">
+                                <div className="bg-gray-800 p-2 border-1 border-solid border-gray-700 rounded-md mr-8 transition-all h-fit group-hover:bg-slate-900">
                                     {logo}
                                 </div>
                                 <div className={hoverColor}>
@@ -168,7 +168,7 @@ function Hero() {
                     <ul className={firaCode.className}>
                         {frameworks.map(({ id, logo, txt, hoverColor }) => (
                             <li key={id} className="flex text-gray-300 mb-4 mt-4 group">
-                                <div className="bg-gray-800 p-2 border-1 border-solid border-gray-700 rounded-md mr-8 transition-all hover:bg-slate-900">
+                                <div className="bg-gray-800 p-2 border-1 border-solid border-gray-700 rounded-md mr-8 transition-all h-fit hover:bg-slate-900">
                                     {logo}
                                 </div>
                                 <div className={hoverColor}>
@@ -184,7 +184,7 @@ function Hero() {
                     <ul className={firaCode.className}>
                         {contentMgmt.map(({ id, logo, txt, hoverColor }) => (
                             <li key={id} className="flex text-gray-300 mb-4 mt-4 group">
-                                <div className="bg-gray-800 p-2 border-1 border-solid border-gray-700 rounded-md mr-8 transition-all hover:bg-slate-900">
+                                <div className="bg-gray-800 p-2 border-1 border-solid border-gray-700 rounded-md mr-8 transition-all h-fit hover:bg-slate-900">
                                     {logo}
                                 </div>
                                 <div className={hoverColor}>

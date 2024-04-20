@@ -6,7 +6,6 @@ import { SiNextdotjs, SiTailwindcss, SiWoo, SiStoryblok, SiAdobephotoshop, SiAdo
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { Fira_Code } from 'next/font/google';
 
-
 const firaCode = Fira_Code({subsets: ["latin"]});
 
 function Portfolio() {
@@ -32,7 +31,7 @@ function Portfolio() {
             urlName: 'arnotortho.com',
             image: '/arnot-skeleton.jpg',
             explainer: "The Arnot Orthopedic group was intent on creating a website that is easy to navigate for existing (and potential) patients. The group also wanted the ability to add patient resources and useful information on their own without learning how to code. This Next.js application was built with Storyblok CMS, which allows the doctors to add content by filling out a few fields and clicking 'Publish.'",
-            challenges: "Labore dolore do laboris ipsum reprehenderit adipisicing dolore Lorem nisi. Adipisicing quis Lorem quis aliqua qui nostrud eiusmod fugiat ipsum veniam. Fugiat mollit sunt consequat aute minim elit anim nostrud consequat est aliquip deserunt sit. Aliquip ex ad duis aute exercitation qui eu qui. Ea magna aliquip voluptate dolore. Velit commodo qui incididunt id est adipisicing excepteur ad laborum.",
+            challenges: "The biggest challenge with this project was the amount of planning required before creating the CMS and architecting the website structure so it was easy for doctors to edit, and also easy for existing and prospective candidates to navigate.",
             icon1: <FaReact size={40} className="text-[#0d9488] basis-1/5" />,
             icon2: <SiNextdotjs size={40} className='text-[#0d9488] basis-1/5' />,
             icon3: <SiTailwindcss size={40} className='text-[#0d9488] basis-1/5' />,
@@ -73,29 +72,28 @@ function Portfolio() {
   return (
     <div id="Portfolio" className="w-full max-w-[1600px] mx-auto mt-[50px]">
         <div className="flex lg:flex-row md:flex-col sm:flex-col">
-            <div className="basis-full p-4 lg:p-10">
+            <div className="basis-full p-4 lg:p-6">
                 <div className='text-3xl font-semibold text-gray-300 border-b-4 border-teal-600 max-w-max pb-2 mb-16'>
                     Portfolio
                 </div>
                 {projects.map(({ id, title, url, urlName, image, explainer, challenges, icon1, icon2, icon3, icon4, icon5 }) => (
                 <div key={id} className="relative w-full mb-48 basis-full flex flex-col lg:flex-row">
-                    <div className='basis-full w-full lg:basis-1/2 lg:p-8 mx-auto'>
-                        <div className='portfolio-image relative bg-gradient-to-l from-cyan-500 to-blue-500 rounded-2xl max-w-max max-h-max w-full pr-[10px] pb-[10px] hover:p-0 transition-all'>
-                            <Image src={image} width="750" height="622" className="rounded-2xl relative z-20 transition-all duration-300 w-full max-w-max opacity-90 hover:opacity-100" />
-                            <div className="more-about-me absolute top-0 z-30 w-3/4 left-[12.5%] opacity-0 transition-all text-sm duration-300 text-white bg-slate-800/65 p-6 rounded-xl hidden lg:block">
+                    <div className='basis-full w-full lg:basis-1/2 p-2 mx-auto'>
+                        <div className='portfolio-image group relative bg-gradient-to-l from-cyan-500 to-blue-500 rounded-2xl max-w-max max-h-max w-full pr-[10px] pb-[10px] mx-auto hover:p-0 transition-all'>
+                            <Image src={image} width="750" height="622" className="rounded-2xl relative z-20 transition-all duration-300 w-full max-w-max opacity-90 group-hover:opacity-100" />
+                            <div className="more-about-me absolute top-0 z-30 w-3/4 left-[12.5%] opacity-0 transition-all text-sm duration-300 text-white bg-slate-800/65 backdrop-blur-sm p-6 rounded-xl hidden lg:block">
                                 {challenges}
                             </div>
-                            <Link href={url} target="_blank" className='absolute z-30 bottom-10 text-xl text-white px-6 py-2 mx-auto rounded-lg left-1/2 ml-[-85px] cursor-pointer bg-slate-800/65 transition-all duration-300 flex hover:bg-slate-800'>
+                            <Link href={url} target="_blank" className='absolute z-30 bottom-10 text-xl text-white px-6 py-2 mx-auto rounded-lg left-1/2 ml-[-85px] cursor-pointer bg-slate-800/65 transition-all duration-300 flex hover:bg-slate-800 backdrop-blur-sm'>
                                 Visit Page <IoIosArrowRoundForward className='ml-2 align-middle relative top-1'/>
                             </Link>
                         </div>    
                     </div>
 
-                    <div className='relative z-20 max-w-[650px] basis-full w-full lg:basis-1/2 p-2 lg:p-8 mx-auto'>
-                        <div className='rounded-2xl p-[1px] relative top-[12%] mx-auto'>
+                    <div className='relative z-20 basis-full w-full lg:basis-1/2 p-2 lg:p-4 mx-auto'>
+                        <div className='rounded-2xl p-[1px] relative top-[5%] mx-auto'>
                             <div className='rounded-[16px]'>
                                 <div className="p-4">
-                                    
                                         <div className={firaCode.className}>
                                             <span className='text-emerald-400'>{id}</span>
                                         </div> 

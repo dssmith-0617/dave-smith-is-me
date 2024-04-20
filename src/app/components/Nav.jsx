@@ -19,7 +19,7 @@ function Nav() {
     },
     {
       id: 3,
-      link: "Contact",
+      link: "Connect",
     },
   ];
 
@@ -48,7 +48,7 @@ function Nav() {
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="nav-links px-8 cursor-pointer uppercase font-medium text-gray-200 hover:scale-105 hover:text-white duration-200 link-underline"
+            className="nav-links px-8 cursor-pointer font-medium text-teal-600 hover:scale-105 hover:text-white duration-200 link-underline"
           >
             <Link href={`#${link}`}>{link}</Link>
           </li>
@@ -63,13 +63,13 @@ function Nav() {
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-[#151b39] text-gray-300 upp">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-[#151b39] text-teal-600 upp">
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="px-4 cursor-pointer uppercase py-6 text-4xl"
+              className="px-4 cursor-pointer py-6 text-4xl"
             >
-              <Link onClick={() => setNav(!nav)} href={link}>
+              <Link onClick={() => setNav(!nav)} href={`#${link}`}>
                 {link}
               </Link>
             </li>
