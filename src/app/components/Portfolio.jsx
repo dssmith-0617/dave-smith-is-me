@@ -58,7 +58,7 @@ function Portfolio() {
             url: 'https://www.kanddcreations.com/',
             urlName: 'kanddcreations.com/',
             image: '/kandd-creations.png',
-            explainer: "The K&D Creations website was in disrepair was I was hired to fix some major structural problems and also complete a major theme redesign. The client required this project to be done on a very short timeline to be ready for a major tradeshow, so I was able to complete the bulk of this project in just a few weeks. The website now has a cohesive theme that matches the client's portfolio images and shows off their expertise to potential clients.",
+            explainer: "The K&D Creations website was in disrepair when I was hired to fix some major structural problems and also complete a major theme redesign. The client required this project to be done on a very short timeline to be ready for a major tradeshow, so I was able to complete the bulk of this project in just a few weeks. The website now has a cohesive theme that matches the client's portfolio images and shows off their expertise to potential clients.",
             challenges: "This project required a backup restoration, copy writing, logo creation, and photo editing on top of substantial website design and coding.",
             icon1: <FaWordpress size={40} className='text-[#0d9488] basis-1/5' />,
             icon2: <FaPhp size={40} className='text-[#0d9488] basis-1/5' />,
