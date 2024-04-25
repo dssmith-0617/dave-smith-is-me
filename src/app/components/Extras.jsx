@@ -66,7 +66,7 @@ function Extras() {
               <div className="basis-1/2 p-4">
                 <div className={firaCode.className}>ClearView/XAML</div>
                 <div className="my-4">
-                  I had the opportunity to work on the UI design for one of Teknic's customer-facing software programs. This involved creating wireframes for 20+ interfaces; I was also able to learn XAML and write a significant portion of the code to implement these designs.
+                  I had the opportunity to work on the UI design for a customer-facing software program at Teknic. This involved creating wireframes for 20+ interfaces; I was also able to learn XAML and write a significant portion of the code to implement these designs.
                 </div>  
                 <div className="flex flex-row">
                   <SiXaml size={40} className="text-[#0d9488] basis-1/5" />
@@ -74,7 +74,7 @@ function Extras() {
                 </div>
               </div>
               <div className="basis-1/2 p-4">
-                <Image src="/old-clearview.png" width="700" height="896" className="rounded-xl transition-all duration-300"/>
+                <Image src="/old-clearview.png" alt="clearview software" width="700" height="896" className="rounded-xl transition-all duration-300"/>
               </div>              
             </div>
           }
@@ -82,7 +82,7 @@ function Extras() {
             <div className="flex flex-row basis-1 relative p-2">
               <div className="basis-1/2 p-4">
                 <div className={firaCode.className}>
-                  <Image src="/pasture-stand-logo_header.svg" height="150" width="220" />
+                  <Image src="/pasture-stand-logo_header.svg" alt="pasture stand logo" height="150" width="220" />
                 </div>
                 <div className="my-4">
                   Proident laborum irure officia aute occaecat. Ipsum magna anim do laboris eu culpa consequat cupidatat excepteur ut laborum eu. Aliqua qui exercitation magna labore laboris velit eiusmod aliquip nulla. Ea qui quis enim ad proident anim sint sit.

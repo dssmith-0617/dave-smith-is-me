@@ -80,7 +80,7 @@ function Portfolio() {
                 <div key={id} className="relative w-full mb-48 basis-full flex flex-col lg:flex-row">
                     <div className='basis-full w-full lg:basis-1/2 p-2 mx-auto'>
                         <div className='portfolio-image group relative bg-gradient-to-l from-cyan-500 to-blue-500 rounded-2xl max-w-max max-h-max w-full pr-[10px] pb-[10px] mx-auto hover:p-0 transition-all'>
-                            <Image src={image} width="750" height="622" className="rounded-2xl relative z-20 transition-all duration-300 w-full max-w-max opacity-90 group-hover:opacity-100" />
+                            <Image src={image} alt={title} width="750" height="622" className="rounded-2xl relative z-20 transition-all duration-300 w-full max-w-max opacity-90 group-hover:opacity-100" />
                             <div className="more-about-me absolute top-0 z-30 w-3/4 left-[12.5%] opacity-0 transition-all text-sm duration-300 text-white bg-slate-800/65 backdrop-blur-sm p-6 rounded-xl hidden lg:block">
                                 {challenges}
                             </div>
