@@ -82,7 +82,7 @@ function Extras() {
             <div className="flex flex-row basis-1 relative p-2">
               <div className="basis-1/2 p-4">
                 <div className={firaCode.className}>
-                  <Image src="/pasture-stand-logo_header.svg" height="150" width="150" />
+                  <Image src="/pasture-stand-logo_header.svg" height="150" width="220" />
                 </div>
                 <div className="my-4">
                   Proident laborum irure officia aute occaecat. Ipsum magna anim do laboris eu culpa consequat cupidatat excepteur ut laborum eu. Aliqua qui exercitation magna labore laboris velit eiusmod aliquip nulla. Ea qui quis enim ad proident anim sint sit.
