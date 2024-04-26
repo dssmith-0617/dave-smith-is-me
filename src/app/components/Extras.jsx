@@ -98,7 +98,7 @@ function Extras() {
                   <Image src="/pasture-stand-logo_header.svg" alt="pasture stand logo" height="150" width="220" />
                 </div>
                 <div className="my-4">
-                  Pasture Stand was a startup that created an online farmer's market, which allowed farmers to sell directly to customers that live nearby. I designed the company logo and UI/UX, and completed a large chunk of the development for the website.
+                  Pasture Stand was a startup that created an online farmer&apos;s market, which allowed farmers to sell directly to customers that live nearby. I designed the company logo and UI/UX, and completed a large chunk of the development for the website.
                 </div>  
                 <div className="flex flex-row">
                   <SiAdobeillustrator size={40} className="text-[#0d9488] basis-1/5" />
@@ -117,7 +117,7 @@ function Extras() {
                   Marketing Mailers
                 </div>
                 <div className="my-4">
-                  I run a monthly mailer campaign at Teknic that we send out to about 50,000 subscribers. It has become a tradition for me to send a silly (stupid) themed mailer every Halloween. I enjoy it as an opportunity to make something odd and hopefully funny for the subscribers.
+                  I run a monthly mailer campaign at Teknic that we send out to about 50,000 subscribers. It has become a tradition for me to send a silly themed mailer once a year; these are some of the mailer images I&apos;ve designed. I enjoy it as an opportunity to make something odd and hopefully funny for the subscribers.
                 </div>  
                 <div className="flex flex-row">
                   <SiAdobephotoshop size={40} className="text-[#0d9488] basis-1/5" />
@@ -126,7 +126,7 @@ function Extras() {
               </div>
               <div className="basis-2/3 text-center p-4">
                 <Image src="/mailer-tiles.png" width="1306" height="871" className="rounded-xl transition-all duration-300 mx-auto"/>
-              </div>              
+              </div>
             </div>
           }
         </div>
