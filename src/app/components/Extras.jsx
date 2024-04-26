@@ -77,7 +77,7 @@ function Extras() {
           {activeTab === 1 && 
             <div className="flex flex-col lg:flex-row basis-1 w-full relative p-2">
               <div className="basis-1/3 p-4">
-                <div className={firaCode.className}>ClearView/XAML</div>
+                <div className={firaCode.className}><span className="text-emerald-400">ClearView/XAML</span></div>
                 <div className="my-4">
                   I had the opportunity to work on the UI design for a customer-facing software program at Teknic. This involved creating wireframes for 20+ interfaces; I was also able to learn XAML and write a significant portion of the code to implement these designs.
                 </div>  
@@ -114,7 +114,7 @@ function Extras() {
             <div className="flex flex-col lg:flex-row basis-1 relative p-2">
               <div className="basis-1/3 p-4">
                 <div className={firaCode.className}>
-                  Marketing Mailers
+                  <span className="text-emerald-400">Marketing Mailers</span>
                 </div>
                 <div className="my-4">
                   I run a monthly mailer campaign at Teknic that we send out to about 50,000 subscribers. It has become a tradition for me to send a silly themed mailer once a year; these are some of the mailer images I&apos;ve designed. I enjoy it as an opportunity to make something odd and hopefully funny for the subscribers.
