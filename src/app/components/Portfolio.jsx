@@ -43,9 +43,9 @@ function Portfolio() {
             title: 'Product Acessories Guide',
             url: 'https://teknic.com/clearpath-accessories-guide/accessories-guide-sd-dc-sealed/',
             urlName: 'teknic.com',
-            image: '/accessories-guide-opera.png',
+            image: '/accessories-guide.jpg',
             explainer: "This page guides users through the process of purchasing required and optional accessories to complete a servo motor system. I used Bootstrap and jQuery to create a guide that is easy to use and provides a substantial amount of information to the user without overwhelming them.",
-            challenges: "Irure culpa tempor aliqua labore ex esse amet esse sunt exercitation nulla sit deserunt ea. Cillum ut pariatur id Lorem sint elit. Est proident eiusmod mollit velit et sit eu ut mollit duis.",
+            challenges: "This project was a major redesign with the primary goal of lowering customer support calls. This step in the buying process can be extremely complex and confusing, so a great deal of attention and work went into helping customers feel comfortable moving through each step with confidence.",
             icon1: <DiJqueryLogo size={40} className="text-[#0d9488] basis-1/5" />,
             icon2: <FaBootstrap size={40} className='text-[#0d9488] basis-1/5' />,
             icon3: <FaCss3 size={40} className='text-[#0d9488] basis-1/5' />,
@@ -77,7 +77,7 @@ function Portfolio() {
                     Portfolio
                 </div>
                 {projects.map(({ id, title, url, urlName, image, explainer, challenges, icon1, icon2, icon3, icon4, icon5 }) => (
-                <div key={id} className="relative w-full mb-48 basis-full flex flex-col lg:flex-row">
+                <div key={id} className="relative w-full mb-36 basis-full flex flex-col lg:flex-row">
                     <div className='basis-full w-full lg:basis-1/2 p-2 mx-auto'>
                         <div className='portfolio-image group relative bg-gradient-to-l from-cyan-500 to-blue-500 rounded-2xl max-w-max max-h-max w-full pr-[10px] pb-[10px] mx-auto hover:p-0 transition-all'>
                             <Image src={image} alt={title} width="750" height="622" className="rounded-2xl relative z-20 transition-all duration-300 w-full max-w-max opacity-90 group-hover:opacity-100" />

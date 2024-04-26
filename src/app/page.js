@@ -2,6 +2,7 @@ import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import Portfolio from "./components/Portfolio";
 import Extras from "./components/Extras";
+import Connect from "./components/Connect";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       <Hero />
       <Portfolio />
       <Extras />
-      
+      <Connect />
     </main>
   );
 }

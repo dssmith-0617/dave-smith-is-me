@@ -1,6 +1,6 @@
 'use client';
 
-import { SiXaml, SiAdobephotoshop, SiAdobeillustrator, SiAdobexd } from "react-icons/si";
+import { SiXaml, SiAdobephotoshop, SiAdobeillustrator, SiAdobexd, SiMailchimp } from "react-icons/si";
 import { useState } from "react";
 import Image from 'next/image';
 import { Fira_Code } from 'next/font/google';
@@ -35,9 +35,12 @@ function Extras() {
   ];
 
   return (
-    <div className="w-full max-w-[1200px] mx-auto mb-12">
+    <div className="w-full max-w-[1500px] mx-auto mb-12 p-4 lg:p-6">
+      <div className='text-3xl font-semibold text-gray-300 border-b-4 border-teal-600 max-w-max pb-2 mb-16'>
+          More Designs
+      </div>
        <div className="p-2">
-          <div className="mb-4 text-center">
+          <div className="mb-4 text-center flex flex-col md:flex-row">
             <button
               className={`${
                 activeTab === 1
@@ -58,12 +61,22 @@ function Extras() {
             >
               Pasture Stand
             </button>
+            <button
+              className={`${
+                activeTab === 3
+                ? 'bg-white/20 text-white transition-all'
+                : 'bg-white/5 text-white transition-all hover:bg-white/20'
+              } py-2 px-4 mx-2 focus:outline-none`}
+              onClick={() => changeTab(3)}
+            >
+              Mailers
+            </button>
           </div>
         </div>
         <div>
           {activeTab === 1 && 
-            <div className="flex flex-row basis-1 relative p-2">
-              <div className="basis-1/2 p-4">
+            <div className="flex flex-col lg:flex-row basis-1 w-full relative p-2">
+              <div className="basis-1/3 p-4">
                 <div className={firaCode.className}>ClearView/XAML</div>
                 <div className="my-4">
                   I had the opportunity to work on the UI design for a customer-facing software program at Teknic. This involved creating wireframes for 20+ interfaces; I was also able to learn XAML and write a significant portion of the code to implement these designs.
@@ -73,27 +86,46 @@ function Extras() {
                   <SiAdobexd size={40} className="text-[#0d9488] basis-1/5" />
                 </div>
               </div>
-              <div className="basis-1/2 p-4">
-                <Image src="/old-clearview.png" alt="clearview software" width="700" height="896" className="rounded-xl transition-all duration-300"/>
+              <div className="basis-2/3 text-center p-4">
+                <Image src="/clearview-tiles.png" alt="clearview software" width="1452" height="884" className="rounded-xl transition-all duration-300 mx-auto"/>
               </div>              
             </div>
           }
           {activeTab === 2 && 
-            <div className="flex flex-row basis-1 relative p-2">
-              <div className="basis-1/2 p-4">
+            <div className="flex flex-col lg:flex-row basis-1 relative p-2">
+              <div className="basis-1/3 p-4">
                 <div className={firaCode.className}>
                   <Image src="/pasture-stand-logo_header.svg" alt="pasture stand logo" height="150" width="220" />
                 </div>
                 <div className="my-4">
-                  Proident laborum irure officia aute occaecat. Ipsum magna anim do laboris eu culpa consequat cupidatat excepteur ut laborum eu. Aliqua qui exercitation magna labore laboris velit eiusmod aliquip nulla. Ea qui quis enim ad proident anim sint sit.
+                  Pasture Stand was a startup that created an online farmer's market, which allowed farmers to sell directly to customers that live nearby. I designed the company logo and UI/UX, and completed a large chunk of the development for the website.
                 </div>  
                 <div className="flex flex-row">
                   <SiAdobeillustrator size={40} className="text-[#0d9488] basis-1/5" />
                   <SiAdobexd size={40} className="text-[#0d9488] basis-1/5" />
                 </div>
               </div>
-              <div className="basis-1/2 p-4">
-                <Image src="/pasture-stand-homepage.jpg" width="700" height="896" className="rounded-xl transition-all duration-300"/>
+              <div className="basis-2/3 text-center p-4">
+                <Image src="/pasture-stand-tiles.png" width="1899" height="954" className="rounded-xl transition-all duration-300 mx-auto"/>
+              </div>              
+            </div>
+          }
+          {activeTab === 3 && 
+            <div className="flex flex-col lg:flex-row basis-1 relative p-2">
+              <div className="basis-1/3 p-4">
+                <div className={firaCode.className}>
+                  Marketing Mailers
+                </div>
+                <div className="my-4">
+                  I run a monthly mailer campaign at Teknic that we send out to about 50,000 subscribers. It has become a tradition for me to send a silly (stupid) themed mailer every Halloween. I enjoy it as an opportunity to make something odd and hopefully funny for the subscribers.
+                </div>  
+                <div className="flex flex-row">
+                  <SiAdobephotoshop size={40} className="text-[#0d9488] basis-1/5" />
+                  <SiMailchimp size={40} className="text-[#0d9488] basis-1/5" />
+                </div>
+              </div>
+              <div className="basis-2/3 text-center p-4">
+                <Image src="/mailer-tiles.png" width="1306" height="871" className="rounded-xl transition-all duration-300 mx-auto"/>
               </div>              
             </div>
           }
