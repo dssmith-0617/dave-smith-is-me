@@ -44,9 +44,9 @@ function Extras() {
             <button
               className={`${
                 activeTab === 1
-                  ? 'bg-white/20 text-white transition-all'
+                  ? 'bg-white/20 text-white transition-all border-b-4 border-teal-600'
                   : 'bg-white/5 text-white transition-all hover:bg-white/20'
-              } py-2 px-4 mx-2 focus:outline-none`}
+              } py-2 px-4 mx-2 rounded-md`}
               onClick={() => changeTab(1)}
             >
               ClearView/XAML
@@ -54,9 +54,9 @@ function Extras() {
             <button
               className={`${
                 activeTab === 2
-                ? 'bg-white/20 text-white transition-all'
+                ? 'bg-white/20 text-white transition-all border-b-4 border-teal-600'
                 : 'bg-white/5 text-white transition-all hover:bg-white/20'
-              } py-2 px-4 mx-2 focus:outline-none`}
+              } py-2 px-4 mx-2 rounded-md`}
               onClick={() => changeTab(2)}
             >
               Pasture Stand
@@ -64,9 +64,9 @@ function Extras() {
             <button
               className={`${
                 activeTab === 3
-                ? 'bg-white/20 text-white transition-all'
+                ? 'bg-white/20 text-white transition-all border-b-4 border-teal-600'
                 : 'bg-white/5 text-white transition-all hover:bg-white/20'
-              } py-2 px-4 mx-2 focus:outline-none`}
+              } py-2 px-4 mx-2 rounded-md`}
               onClick={() => changeTab(3)}
             >
               Mailers

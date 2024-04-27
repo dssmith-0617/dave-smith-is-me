@@ -31,7 +31,7 @@ function Portfolio() {
             urlName: 'arnotortho.com',
             image: '/arnot-skeleton.jpg',
             explainer: "The Arnot Orthopedic group was intent on creating a website that is easy to navigate for existing (and potential) patients. The group also wanted the ability to add patient resources and useful information on their own without learning how to code. This Next.js application was built with Storyblok CMS, which allows the doctors to add content by filling out a few fields and clicking 'Publish.'",
-            challenges: "The biggest challenge with this project was the amount of planning required before creating the CMS and architecting the website structure so it was easy for doctors to edit, and also easy for existing and prospective candidates to navigate.",
+            challenges: "The biggest challenge with this project was the amount of planning required before creating the CMS and architecting the website structure so it was easy for doctors to edit, and also easy for existing and prospective patients to navigate.",
             icon1: <FaReact size={40} className="text-[#0d9488] basis-1/5" />,
             icon2: <SiNextdotjs size={40} className='text-[#0d9488] basis-1/5' />,
             icon3: <SiTailwindcss size={40} className='text-[#0d9488] basis-1/5' />,
@@ -79,8 +79,8 @@ function Portfolio() {
                 {projects.map(({ id, title, url, urlName, image, explainer, challenges, icon1, icon2, icon3, icon4, icon5 }) => (
                 <div key={id} className="relative w-full mb-36 basis-full flex flex-col lg:flex-row">
                     <div className='basis-full w-full lg:basis-1/2 p-2 mx-auto'>
-                        <div className='portfolio-image group relative bg-gradient-to-l from-cyan-500 to-blue-500 rounded-2xl max-w-max max-h-max w-full pr-[10px] pb-[10px] mx-auto hover:p-0 transition-all'>
-                            <Image src={image} alt={title} width="750" height="622" className="rounded-2xl relative z-20 transition-all duration-300 w-full max-w-max opacity-90 group-hover:opacity-100" />
+                        <div className='portfolio-image group relative bg-gradient-to-l from-cyan-500 to-blue-500 rounded-[20px] max-w-max max-h-max w-full pr-[10px] pb-[10px] mx-auto hover:p-0 transition-all'>
+                            <Image src={image} alt={title} width="750" height="622" className="rounded-[18px] relative z-20 transition-all duration-300 w-full max-w-max " />
                             <div className="more-about-me absolute top-0 z-30 w-3/4 left-[12.5%] opacity-0 transition-all text-sm duration-300 text-white bg-slate-800/65 backdrop-blur-sm p-6 rounded-xl hidden lg:block">
                                 {challenges}
                             </div>
