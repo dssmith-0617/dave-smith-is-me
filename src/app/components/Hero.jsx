@@ -131,7 +131,7 @@ function Hero() {
                     I am very passionate about working on all phases of website development, from the first day with a blank canvas, to the last day of a project when the code is pushed to the live website.
                     </p> 
                 </div>
-                <div id="hero-images" className='relative bg-gradient-to-l from-cyan-500 to-blue-500 w-full mx-auto rounded-2xl max-h-[896px] max-w-[700px] text-center pr-[10px] pb-[10px] hover:p-0'>
+                <div id="hero-images" className='relative bg-gradient-to-l from-cyan-500 to-blue-500 w-full mx-auto rounded-2xl max-h-[896px] max-w-[450px] text-center pr-[10px] pb-[10px] hover:p-0'>
                     <Image src="/fisherman_drawing_2.png" alt="fisherman" width="700" height="896" className="rounded-2xl relative z-20 transition-all duration-300"/>
                     <Image src="/fisherman_picture.jpg" alt="fisherman drawing" width="700" height="896" className="bottom-photo rounded-2xl absolute bottom-0 z-10 transition-all duration-300"/>
                     <div id="more-about-me" className='absolute top-1/4 z-30 w-3/4 left-[12.5%] opacity-0 transition-all duration-300 text-white bg-slate-800/65 p-6 rounded-xl hidden backdrop-blur-sm sm:block'>
